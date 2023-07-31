@@ -71,7 +71,7 @@ jobs:
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
       - name: Sync files
-        uses: SamKirland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_ACCOUNT }}
