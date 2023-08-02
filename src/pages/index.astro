@@ -1,15 +1,8 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "しゃけのウェブサイト";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>My Shake Site</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h3>技術系の雑多なメモ</h3>
+  <p>トップページに何を載せたらいいのかまだわからないので工事中です。</p>
+</BaseLayout>
