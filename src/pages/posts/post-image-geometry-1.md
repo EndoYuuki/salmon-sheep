@@ -237,7 +237,7 @@ $$
 F: \underbrace{V^\star \times \cdots \times V^\star}_r \times \underbrace{V \times \cdots \times V}_s \rightarrow \mathbb{R}
 $$
 
-の集合を $(r, s)$ 型テンソルといいます。
+の集合を <u class="highlight"> $(r, s)$ 型テンソル </u> といいます。
 
 $(r, s)$ 型テンソル全体の集合を $V^{(r,s)}$ と書きます。
 
@@ -273,4 +273,11 @@ $$
 
 
 ### テンソル積
+$F \in V^{(r, s)}$ と $G \in V^{(r^\prime, s^\prime)}$ について、<u class="highlight">テンソル積</u> $F \otimes G \in V^{(r+r^\prime, s+s^\prime)}$ を定義します。
 
+$$
+\begin{aligned}
+&F \otimes G: \underbrace{V^\star \times \cdots \times V^\star}_r \times \underbrace{V^\star \times \cdots \times V^\star}_{r^\prime} \\
+&\quad \quad \quad \quad \quad \underbrace{V \times \cdots \times V}_s \times \underbrace{V \times \cdots \times V}_{s^\prime} \rightarrow \mathbb{R}
+\end{aligned}
+$$
