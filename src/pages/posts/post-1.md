@@ -6,7 +6,7 @@ description: 'Astroを使ったブログ構築について、最初の投稿と�
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'Astroのロゴ。'
-tags: ["astro", "ブログ"]
+tags: ["astro", "GitHub Actions"]
 ---
 ## 参考
 https://docs.astro.build/ja/tutorial/0-introduction/
