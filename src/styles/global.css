@@ -3,6 +3,11 @@ html {
   font-family: sans-serif;
 }
 
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
 .content {
   margin: 10px auto;
   width: 100%;
@@ -10,6 +15,14 @@ html {
   padding: 1rem;
   line-height: 1.5;
 }
+
+a:link { color: #000; font-weight: bold; }
+a:visited { color: #000; }
+a:active { color: #000; }
+
+.dark a:link { color: #FFF; }
+.dark a:visited { color: #FFF; }
+.dark a:active { color: #FFF; }
 
 * {
   box-sizing: border-box;
@@ -38,6 +51,10 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
 
 .nav-links a:hover, a:focus {
