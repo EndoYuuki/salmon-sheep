@@ -1,0 +1,6 @@
+.markdown {
+  @apply prose-h2:bg-slate-100 prose-h2:px-6 prose-h2:py-4 dark:prose-h2:bg-slate-800;
+  @apply prose-h3:border-l-4 prose-h3:pl-[0.5em] prose-p:m-0 prose-p:px-4;
+  
+  @apply prose-strong:font-bold prose-strong:underline prose-strong:decoration-yellow-400 prose-strong:not-italic prose-strong:decoration-4 prose-strong:underline-offset-4
+}

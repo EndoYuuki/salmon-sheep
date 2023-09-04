@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import '../tailwind/markdown.css';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
@@ -16,7 +17,7 @@ const { frontmatter } = Astro.props;
     ))}
   </div>
 
-  <div class="container mt-10 prose dark:prose-invert max-w-none prose-h2:bg-slate-100 prose-h2:px-6 prose-h2:py-4 dark:prose-h2:bg-slate-800 prose-h3:border-l-4 prose-h3:pl-[0.5em] prose-p:m-0 prose-p:px-4">
+  <div class="container mt-10 prose max-w-none dark:prose-invert markdown">
     <slot />
   </div>
 </BaseLayout>
