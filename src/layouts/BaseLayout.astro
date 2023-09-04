@@ -18,8 +18,8 @@ const { pageTitle } = Astro.props;
   <body class="bg-white dark:bg-black">
     <div class="Page text-slate-800 dark:text-slate-50">
       <Header title="しゃけ"/>
-      <div id="content" class="mb-12">
-        <div class="container">
+      <div class="container">
+        <div id="content" class="mb-12 px-4">
           <p class="text-4xl font-bold mt-6 py-4">{pageTitle}</p>
           <slot />
           <script>
