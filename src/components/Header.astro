@@ -1,23 +1,21 @@
 ---
 import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
+import ThemeIcon from './ThemeIcon.astro';
+
+const { title } = Astro.props;
 ---
-<style>
-    header {
-        border-bottom: 1px solid #bbbbbb;
-    }
-
-    header .content {
-        width: 100%;
-        max-width: 80ch;
-    }
-</style>
-
-<header>
-<div class="content">
-  <nav>
-    <Hamburger />
-    <Navigation />
-  </nav>
-</div>
+<div>
+<header class="py-4 border-b border-slate-200 dark:border-white">
+  <div class="container">
+    <div class="flex flex-wrap flex-row items-center">
+      <div id="hamburger" class="w-1/6 block sm:hidden"><Hamburger /></div>
+      <div class="hidden sm:block sm:w-2/6 md:w-1/6"><a class="font-bold text-xl" href="/">{title}</a></div>
+      <div id="navLinks" class="hidden w-4/6 sm:block sm:w-3/6 md:w-4/6">
+        <Navigation />
+      </div>
+      <div class="w-5/6 sm:w-1/6 flex flex-row flex-wrap justify-end"><ThemeIcon /></div>
+    </div>
+  </div>
 </header>
+</div>

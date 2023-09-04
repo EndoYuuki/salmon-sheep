@@ -1,13 +1,43 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
-import "../styles/blog.css";
 ---
 <BaseLayout pageTitle={frontmatter.title}>
   <p>{frontmatter.pubDate.slice(0,10)}</p>
   <p><em>{frontmatter.description}</em></p>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-  <div class="blog">
+
+  <div class="py-5 flex justify-content items-center w-[300px] h-[300px]">
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+  </div>
+
+  <div class="tags">
+    {frontmatter.tags.map((tag) => (
+      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+    ))}
+  </div>
+
+  <div class="container mt-10 prose dark:prose-invert max-w-none prose-h2:bg-slate-100 prose-h2:px-6 prose-h2:py-4 dark:prose-h2:bg-slate-800 prose-h3:border-l-4 prose-h3:pl-[0.5em] prose-p:m-0 prose-p:px-4">
     <slot />
   </div>
 </BaseLayout>
+
+<style>
+  a {
+    color: #00539F;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1.15em;
+    background-color: #F8FCFD;
+  }
+</style>
