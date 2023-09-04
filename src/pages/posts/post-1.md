@@ -4,7 +4,7 @@ title: 'Astroの導入とブログの構築'
 pubDate: 2023-08-02
 description: 'Astroを使ったブログ構築について、最初の投稿としてまとめておきたいと思います。'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://docs.astro.build/assets/full-logo-dark.png'
     alt: 'Astroのロゴ。'
 tags: ["astro", "GitHub Actions"]
 ---
@@ -147,7 +147,7 @@ npm run dev
 ```
 
 
-## GitHub Actionsの設定o
+## GitHub Actionsの設定
 ローカルで、Astroウェブサイトの動作を確認したのち、GitHubへpushしたものを自動的にさくらレンタルサーバーにデプロイするGitHub Actionsを設定しようと思います。
 
 早速ですが、出来上がったワークフローはこちらになります。
