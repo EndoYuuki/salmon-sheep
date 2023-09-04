@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@astrojs/preact": "^2.2.2",
+    "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.9.6",
     "preact": "^10.17.1",
     "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9"
   }
 }

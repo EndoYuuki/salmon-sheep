@@ -1,0 +1,19 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .expanded hr {
+    @apply left-[30%]
+  }
+  .expanded hr:nth-of-type(1) {
+    @apply transform rotate-45 w-[64%]
+  }
+  .expanded hr:nth-of-type(2) {
+    @apply opacity-0
+  }
+  .expanded hr:nth-of-type(3) {
+    @apply top-[32px] transform -rotate-45 w-[64%]
+  }
+}

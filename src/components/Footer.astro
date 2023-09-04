@@ -5,17 +5,16 @@ import Social from './Social.astro';
     footer {
         border-top: 1px solid #bbbbbb;
     }
-
-    footer .content {
-        width: 100%;
-        max-width: 80ch;
-    }
 </style>
 
 <footer>
-    <div class="content">
-    <Social platform="twitter" username="shuckle32099" />
-    <Social platform="github" username="EndoYuuki" />
-    <p>&copy; 2023 Shake. All Rights Reserved.</p>
+    <div class="container">
+        <nav class="mt-4">
+            <ol class="flex [&>li]:px-1">
+                <li><Social platform="twitter" username="shuckle32099" /></li>
+                <li><Social platform="github" username="EndoYuuki" /></li>
+            </ol>
+        </nav>
+        <p class="mt-2">&copy; 2023 Shake. All Rights Reserved.</p>
     </div>
 </footer>

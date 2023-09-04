@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.css';
+import '../tailwind/base.css';
 const { pageTitle } = Astro.props;
 ---
 <html lang="ja">
@@ -15,15 +15,19 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
-    <Header />
-    <div class="content">
-        <h1>{pageTitle}</h1>
-        <slot />
-        <script>
-        import "../scripts/menu.js";
-        </script>
+  <body class="bg-white dark:bg-black">
+    <div class="Page text-slate-800 dark:text-slate-50">
+      <Header title="しゃけ"/>
+      <div id="content" class="mb-12">
+        <div class="container">
+          <p class="text-4xl font-bold mt-6 py-4">{pageTitle}</p>
+          <slot />
+          <script>
+          import "../scripts/menu.js";
+          </script>
+        </div>
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </body>
 </html>
